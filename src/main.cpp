@@ -31,6 +31,9 @@ int main() {
         if(bn::keypad::a_pressed()) {
             dy -= jump_strength;
         }
+        if(bn::keypad::b_pressed()) {
+            gravity *= -1;
+        }
 
         dy += gravity;
 
